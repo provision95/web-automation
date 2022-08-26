@@ -6,24 +6,19 @@ To run the project a user has to install [Poetry](https://python-poetry.org/).
 
 ## Before RUN
 
-<ul>
-    <li><strong>JAVA</strong> installed.</li>
-    <li><strong>npm</strong> and <strong>nodejs</strong> installed.</li>
-</ul>
-
+1. **JAVA** installed.
+2. **npm** and **nodejs** installed.
+3. Install **[Allure Framwork](https://github.com/allure-framework/allure2)**. It can be installed
+   using **[scoop](https://scoop.sh/)** package manager.
 
 ## Run
 
-<ol>
-    <li><code>poetry shell</code> - activate virtual environment.</li>
-    <li><code>poetry install</code> - install dependencies.</li>
-    <li><code>poetry run alluredir</code> - crerate allure report directory</li>
-    <li><code>poetry build</code> - build the project.</li>
-    <li><code>poetry run pytest --alluredir="../Allure" /tests/test-web-automation.py</code> - run the tests.
-    <br> (Or run from IDE run configuration with additional arguments: <code>--alluredir="../Allure"</code>).</li>
-    <li><code>deactivate</code> - to deactivate virtual environment.</li>
-</ol>
+1. `poetry shell` - activate virtual environment.
+2. `poetry install` - install dependencies.
+3. `poetry run pytest --alluredir="../allure-report" /tests/test-web-automation.py` - run the tests. Or run from IDE run
+   configuration with additional arguments: `--alluredir="../allure-report"`.
+4. `deactivate` - to deactivate virtual environment.
 
 ## Allure report server
 
-Run <code>allure serve {path to project}/Allure</code> to activate allure report server.
+Run `allure serve {path to project}/allure-report` to activate allure report server.
