@@ -6,9 +6,7 @@ To run the project a user has to install [Poetry](https://python-poetry.org/).
 
 ## Before RUN
 
-1. **JAVA** installed.
-2. **npm** and **nodejs** installed.
-3. Install **[Allure Framwork](https://github.com/allure-framework/allure2)**. It can be installed
+1. Install **[Allure Framwork](https://github.com/allure-framework/allure2)**. It can be installed
    using **[scoop](https://scoop.sh/)** package manager.
 
 ## Run
